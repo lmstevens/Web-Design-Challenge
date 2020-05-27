@@ -9,18 +9,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <svg class="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+        <a href="index.html"></a><svg class="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
                 d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
             <path fill-rule="evenodd"
                 d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-        </svg>
+        </svg></a>
         <a class="navbar-brand" href="index.html"></a>
         Weather Visualizer
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -48,61 +51,75 @@
                 <li class="nav-item">
                     <a class="nav-link" href="comparison.html">Comparison</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
             </ul>
         </div>
         </a>
     </nav>
-    <div class="container">
-        <div class="row" class="mx-auto">
-            <div class="col-8" class="mx-auto">
-                <div class="card" class="mx-auto">
+<!-- 
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5">Weather Visualizer</h1>
+            <p class="lead">Explore the results of this Webpage Visualization created with Bootstrap.</p>
+        </div>
+    </div>
+-->
+
+    <div class="container bg-light p-3">
+        <div class="row" class="mx-auto ">
+            <div class="col-8 p-3">
+                <div class="card border-0" class="mx-auto">
                     <div class="card-body">
-                        <h1 class="mx-auto" class="mt-1">Summary: Latitude vs. X</h1>
+                        <h1 class="mx-auto" class="mt-1" class="text-info">Summary: Latitude vs. X</h1>
                         <div class="dropdown-divider"></div>
-                        <img src="assests/Fig1.png" class="image-fluid" alt="image1">
-                        <p class="card-text">The purpose of this project was to analyze how weather changes as you get
-                            closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap
+                        <img class="img-thumbnail float-left w-50 border-0" src="assests/Fig1.png" alt="image1">
+                        <p class="card-text p-3">The purpose of this project was to analyze how weather changes as you get
+                            closer to the equator. To accomplish this analysis, we first pulled data from the
+                            OpenWeatherMap
                             API to assemble a dataset on over 500 cities.
                         </p>
                         <p>
                             After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
-                            latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humitity. This
+                            latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humitity.
+                            This
                             site provides the source data and visualizations created as part of the analysis, as well as
                             explanations and descriptions of any trends and correlatioins witnessed.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <h1 class="mx-auto">Visualizations</h2>
-                <div class="dropdown-divider"></div>
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="assests/Fig1.png" class="img-thumbnail" alt="image1">
+            <div class="col-4 p-3">
+                <h2 class="mx-auto"class="text-info">Visualizations</h2>
+                    <div class="dropdown-divider"></div>
+                    <div class="row row-cols-1 row-cols-md-2 p-3">
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <image class="img-thumbnail border-0" src="assests/Fig1.png" class="img-thumbnail" alt="image1">
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <image class="img-thumbnail border-0" src="assests/Fig2.png" class="img-thumbnail" alt="image1">
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <image class="img-thumbnail border-0" src="assests/Fig3.png" class="img-thumbnail" alt="image1">
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <image class="img-thumbnail border-0" src="assests/Fig4.png" class="img-thumbnail" alt="image1">
+                            </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="assests/Fig1.png" class="img-thumbnail" alt="image1">
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="assests/Fig1.png" class="img-thumbnail" alt="image1">
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="assests/Fig1.png" class="img-thumbnail" alt="image1">
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>    
+        </div>
     </div>
 
-            <!--<h1 class="mx-auto" class="mt-1">Visualizations</h2>
+    <!--<h1 class="mx-auto" class="mt-1">Visualizations</h2>
             <div class="dropdown-divider"></div>
             
                 <div class="col-2">
@@ -118,7 +135,7 @@
                     <img src="assests/Fig1.png" alt="image1">
                 </div>
             -->
-        </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
